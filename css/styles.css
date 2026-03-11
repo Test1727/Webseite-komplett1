@@ -918,7 +918,7 @@ footer p {
 /* Zusätzliche Sicherheit für den Container */
 .about-details > div:last-child > ul,
 .about-details .detail-item:last-child > ul {
-    margin-top: 2rem !important;
+    margin-top: 0rem !important;
 }
 
 
