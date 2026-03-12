@@ -352,10 +352,7 @@ section {
 }
 
 
-
-
-
-/* Experience Section - kühl, abgestimmt auf Hero */
+/* Experience Section - kühl, abgestimmt auf Hero */ - Timeline
 .experience {
     padding: 60px 0;
     position: relative;
@@ -396,8 +393,6 @@ section {
     position: relative;
     z-index: 1;
 }
-
-
 
 
 .timeline {
