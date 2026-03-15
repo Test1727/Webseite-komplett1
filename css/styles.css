@@ -389,7 +389,10 @@ section {
     100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); }
 }
 
-/* Responsive Anpassungen */
+
+
+
+/* Responsive Anpassungen - ALLES IN EINEM */
 @media (max-width: 992px) {
     .hero .container {
         flex-direction: column;
@@ -400,6 +403,7 @@ section {
     }
 }
 
+/* Smartphone (bis 768px) - EINMALIG */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.8rem;
@@ -407,24 +411,36 @@ section {
     .hero-content h2 {
         font-size: 1.5rem;
     }
-    .profile-image {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-/* Smartphone (bis 768px) */
-@media (max-width: 768px) {
+    
     .profile-image {
         width: 180px !important;
         height: 180px !important;
+        margin-top: 0;
+    }
+    
+    .hero-image {
+        margin-top: 1rem;
+    }
+    
+    .hero-content {
+        margin-top: -20px;
+    }
+    
+    .hero-buttons {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons .btn {
+        min-width: 150px;
+        padding: 10px 20px;
     }
 }
 
 /* Tablet (769px - 992px) */
 @media (min-width: 769px) and (max-width: 992px) {
     .profile-image {
-        width: 280px !important;  /* Größerer Wert */
+        width: 280px !important;
         height: 280px !important;
     }
 }
@@ -434,44 +450,6 @@ section {
     .profile-image {
         width: 300px;
         height: 300px;
-    }
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .hero-buttons {
-        margin-top: 40px;  /* Mehr Abstand */
-        margin-bottom: 30px;
-    }
-}
-    
-    
-    .hero-image {
-        margin-top: 1rem;  /* Weniger Abstand */
-    }
-    
-    .profile-image {
-        width: 180px;  /* Kleiner */
-        height: 180px;
-        margin-top: 0;  /* Kein negativer margin */
-    }
-    
-    .hero-content {
-        margin-top: -20px;  /* Weniger nach oben */
-    }
-    
-    .hero-buttons {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .hero-buttons .btn {
-        min-width: 150px;  /* Kleinere Buttons */
-        padding: 10px 20px;
     }
 }
 
