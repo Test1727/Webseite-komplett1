@@ -461,16 +461,18 @@ section {
 
 .hero-brain {
     position: absolute;
-    right: 0;
+    left: 0;  /* Statt right: 0 */
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(-90deg);  /* -90 = gegen Uhrzeigersinn */
     width: 45%;
     max-width: 500px;
     height: auto;
-    opacity: 0.7;
-    z-index: 1;
-    pointer-events: none; /* Klicks gehen durch zum Button */
+    opacity: 0.5;  /* Evtl. etwas transparenter, da unter Schrift */
+    z-index: 0;  /* Unter den Inhalt */
+    pointer-events: none;
 }
+
+
 
 
 .profile-image {
