@@ -1336,17 +1336,17 @@ html {
 }
 
 
-
-/* GANZ AM ENDE - Sektionsüberschriften Hover */
+/* Sektionsüberschriften mit permanentem Farbverlauf wie AK - OHNE HOVER */
 h2.section-title {
-    color: var(--primary-color) !important;
-    transition: color 0.3s ease;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* Keine Hover-Effekte */
 }
 
-h2.section-title:hover {
-    color: #00ffff !important;
-}
-
+/* Strich unter den Überschriften bleibt wie gehabt */
 h2.section-title::after {
     content: '';
     position: absolute;
@@ -1355,15 +1355,13 @@ h2.section-title::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: var(--accent-color) !important;
+    background-color: var(--accent-color);
     border-radius: 2px;
-    transition: background-color 0.3s ease, width 0.3s ease;
+    /* Keine Hover-Änderungen */
 }
 
-h2.section-title:hover::after {
-    background-color: #00ffff !important;
-    width: 100px;
-}
+
+
 
 
 
