@@ -293,8 +293,7 @@ section {
 .hero-brain {
     position: absolute;
     top: -100px;
-    left: -50%;
-    /* right: -80%;  <- AUSKOMMENTIEREN ODER LÖSCHEN */
+    left: -30%;  /* Weniger negativ = weiter rechts */
     width: auto;
     height: 150%;
     transform: rotate(-90deg);
