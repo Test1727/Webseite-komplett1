@@ -226,17 +226,26 @@ nav ul li a:hover, nav ul li a.active {
     text-decoration: none;
 }
 
-/* Resume Button - kompakter */
+
+/* Resume Button - kompakt mit dunkelblauer Schrift */
 .resume-btn {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: transparent;  /* Transparent */
+    color: var(--primary-color) !important;  /* Dunkelblau wie DE */
     border: 2px solid var(--primary-color);
-    padding: 6px 15px;  /* Von 10px 20px auf 6px 15px reduziert */
-    font-size: 0.85rem;  /* Etwas kleinere Schrift */
+    padding: 6px 15px;
+    font-size: 0.85rem;
     border-radius: var(--border-radius);
     transition: all 0.3s ease;
-    line-height: 1.2;  /* Kompaktere Zeilenhöhe */
+    line-height: 1.2;
 }
+
+.resume-btn:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+    border-color: var(--primary-color);
+}
+
+
 
 
 
