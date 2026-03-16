@@ -256,6 +256,8 @@ nav ul li a:hover, nav ul li a.active {
     background-repeat: no-repeat;
     background-position: right 10px center;
     padding-right: 30px;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .language-selector select:hover {
