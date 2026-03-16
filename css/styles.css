@@ -557,7 +557,8 @@ section {
 
 
 .hero-brain {
-        height: 150% !important;        /* GEÄNDERT: Von 430% zu 150% */
+        height: 300% !important;        /* GEÄNDERT: Von 430% zu 150% */
+    min-width: 300% !important;
         width: auto !important;
         top: auto !important;            /* GEÄNDERT: Von -200% zu auto */
         bottom: -10% !important;         /* NEU: Unten ausrichten */
@@ -660,6 +661,11 @@ section {
         padding-left: 5px;   /* HIER einfügen */
         padding-right: 5px;  /* HIER einfügen */
     }
+
+
+        .hero-brain {
+        height: 350% !important;
+        min-width: 350% !important;  /* ZUSÄTZLICH zu width: auto */
 }
 
 /* EXTRA FÜR SEHR GROßE SMARTFONES (z.B. iPhone Plus) */
