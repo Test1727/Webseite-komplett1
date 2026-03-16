@@ -514,6 +514,8 @@ section {
     }
 }
 
+
+
 /* Smartphone (bis 768px) - EINMALIG */
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -533,7 +535,6 @@ section {
         margin-top: 1rem;
     }
     
-    
     .hero-buttons {
         margin-top: 40px;
         margin-bottom: 30px;
@@ -545,18 +546,16 @@ section {
     }
     
     .hero {
-        padding-top: 100px;  /* NEU */
+        padding-top: 100px;
     }
     
     .hero-content {
-        margin-top: 20px;  /* NEU */
+        margin-top: 20px;
     }
-
-
 
     .hero-brain {
         height: 430% !important;
-        top: -200% !important;  /* Mehr nach oben */
+        top: -200% !important;
         left: -80% !important;
         transform: rotate(-90deg) scale(2.2) !important;
         width: auto;
@@ -564,14 +563,13 @@ section {
     }
     
     .hero {
-        min-height: 100vh;  /* Volle Höhe erzwingen */
-        overflow: hidden;  /* Abschneiden verhindern */
+        min-height: 100vh;
+        overflow: hidden;
     }
     
     section {
-        scroll-margin-top: 100px;  /* Höherer Wert für Smartphone */
+        scroll-margin-top: 100px;
     }
-
 
     .header .container {
         display: flex;
@@ -579,16 +577,49 @@ section {
         align-items: center;
     }
 
-
-
+    /* === KORRIGIERTER BEREICH FÜR SMARTFONE === */
     .header-right {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 8px;
-        margin: 5px 0;
-        height: 32px;  /* Feste Höhe für den Container */
+        margin: 10px 0;
+        height: auto;  /* Automatische Höhe */
+        width: 100%;
     }
+    
+    /* Sprachselector und Button auf gleiche Höhe bringen */
+    .header-right .language-selector select,
+    .header-right .resume-btn {
+        height: 44px !important;
+        min-height: 44px !important;
+        max-height: 44px !important;
+        line-height: 40px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin: 0 !important;
+        font-size: 0.9rem;
+        box-sizing: border-box !important;
+    }
+    
+    /* Speziell für Select */
+    .header-right .language-selector select {
+        -webkit-appearance: none;
+        appearance: none;
+        padding-right: 30px;
+    }
+    
+    /* Speziell für Button */
+    .header-right .resume-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    /* === ENDE KORRIGIERTER BEREICH === */
 }
+
+
 
     
 
