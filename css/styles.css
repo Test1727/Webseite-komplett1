@@ -516,6 +516,7 @@ section {
 
 
 
+
 /* Smartphone (bis 768px) - EINMALIG */
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -545,37 +546,29 @@ section {
         padding: 10px 20px;
     }
     
+    /* ZUSAMMENGEFÜHRT: Hero Definitionen */
     .hero {
         padding-top: 100px;
+        min-height: 100vh;
+        overflow: hidden;
     }
     
     .hero-content {
-        margin-top: 20px;
+        margin-top: 100px !important;
     }
 
-    
-
-
-.hero-brain {
-        height: 300% !important;        /* GEÄNDERT: Von 430% zu 150% */
-    min-width: 300% !important;
+    .hero-brain {
+        height: 300% !important;
+        min-width: 300% !important;
         width: auto !important;
-        top: auto !important;            /* GEÄNDERT: Von -200% zu auto */
-        bottom: -10% !important;         /* NEU: Unten ausrichten */
+        top: auto !important;
+        bottom: -10% !important;
         left: -100% !important;
         right: auto !important;
-        transform: rotate(-90deg) scale(1.5) !important;  /* Skalierung reduziert */
+        transform: rotate(-90deg) scale(1.5) !important;
         object-fit: cover;
         object-position: center bottom;
         opacity: 0.3;
-    }
-
-    
-
-    
-    .hero {
-        min-height: 100vh;
-        overflow: hidden;
     }
     
     section {
@@ -587,23 +580,24 @@ section {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
     }
 
-    /* === KORRIGIERTER BEREICH FÜR SMARTFONE === */
+    /* Header Right Bereich */
     .header-right {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
         margin: 10px auto;
-        height: auto;  /* Automatische Höhe */
+        height: auto;
         width: auto;
         max-width: 100%;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    /* Sprachselector und Button auf gleiche Höhe bringen */
     .header-right .language-selector select,
     .header-right .resume-btn {
         height: 44px !important;
@@ -617,62 +611,46 @@ section {
         box-sizing: border-box !important;
     }
     
-    /* Speziell für Select */
     .header-right .language-selector select {
         -webkit-appearance: none;
         appearance: none;
         padding-right: 30px;
     }
     
-    /* Speziell für Button */
     .header-right .resume-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
     }
-    /* === ENDE KORRIGIERTER BEREICH === */
-}
 
-
-/* EXTRA FÜR SEHR KLEINE GERÄTE (unter 480px) */
-@media (max-width: 480px) {
-    /* Kleinere Buttons für sehr schmale Displays */
-    .header-right .language-selector select,
-    .header-right .resume-btn {
-        height: 40px !important;
-        min-height: 40px !important;
-        max-height: 40px !important;
-        line-height: 36px !important;
-        font-size: 0.8rem;
-        padding-left: 8px;
-        padding-right: 8px;
+    /* Header Höhe reduzieren */
+    header {
+        padding: 0.5rem 0 !important;
+        min-height: 60px !important;
     }
     
-    /* Speziell für Select - Platz für Pfeil anpassen */
-    .header-right .language-selector select {
-        padding-right: 22px !important;  /* Weniger Platz für Pfeil */
-        background-position: right 6px center;  /* Pfeil näher am Rand */
+    .logo {
+        font-size: 1.4rem !important;
+        margin: 5px 0 !important;
     }
     
-    /* Noch kleinerer Abstand zwischen den Buttons */
-    .header-right {
-        gap: 5px;
-        padding-left: 5px;   /* HIER einfügen */
-        padding-right: 5px;  /* HIER einfügen */
+    nav ul {
+        margin: 5px 0 !important;
+        gap: 10px !important;
     }
-
-
-        .hero-brain {
-        height: 350% !important;
-        min-width: 350% !important;  /* ZUSÄTZLICH zu width: auto */
-   }
+    
+    nav ul li {
+        margin: 0 8px !important;
+    }
+    
+    nav ul li a {
+        font-size: 0.9rem !important;
+    }
 }
 
-/* EXTRA FÜR SEHR GROßE SMARTFONES (z.B. iPhone Plus) */
-@media (min-width: 481px) and (max-width: 768px) {
-    /* Hier könnten Anpassungen für größere Smartphones stehen */
-}
+
+
 
 
 
