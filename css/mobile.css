@@ -1,4 +1,4 @@
-/* mobile.css - KORRIGIERTE VERSION */
+/* mobile.css - KOMPLETTE VERSION */
 
 /* Smartphone (bis 768px) */
 @media (max-width: 768px) {
@@ -9,82 +9,73 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        padding-top: 70px; /* Platz für Header */
+        padding-top: 70px;
         padding-bottom: 30px;
     }
     
     /* Hero Content - Textbereich */
     .hero-content {
-        margin-top: 0 !important;
+        margin-top: -20px !important;
         text-align: center;
-        order: 2; /* Text kommt unter das Bild */
+        order: 2;
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.3rem;
-        line-height: 1.2;
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
     }
     
     .hero-content h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
-    }
-    
-    .hero-content p {
-        font-size: 1rem;
-        padding: 0 15px;
     }
     
     /* Hero Image - Bildbereich */
     .hero-image {
-        margin-top: 20px;
+        margin-top: 1rem;
         margin-bottom: 10px;
-        order: 1; /* Bild kommt über den Text */
+        order: 1;
     }
     
     .profile-image {
-        width: 200px !important;
-        height: 200px !important;
+        width: 180px !important;
+        height: 180px !important;
         margin-top: 0 !important;
         border-width: 3px;
     }
     
     /* Buttons */
     .hero-buttons {
-        margin-top: 25px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
         gap: 15px;
         justify-content: center;
-        flex-wrap: wrap;
     }
     
     .hero-buttons .btn {
-        min-width: 160px;
-        padding: 12px 20px;
+        min-width: 150px;
+        padding: 10px 20px;
         font-size: 1rem;
     }
     
-    /* Hero Section selbst */
+    /* Hero Section */
     .hero {
-        padding-top: 0 !important;
+        padding-top: 400px !important;
         min-height: 100vh;
-        height: auto;
-        display: flex;
-        align-items: center;
+        overflow: hidden;
     }
     
-    /* Hero Brain Hintergrund optimieren */
+    /* Hero Brain */
     .hero-brain {
-        height: 250% !important;
-        min-width: 250% !important;
-        bottom: -5% !important;
-        left: -80% !important;
-        transform: rotate(-90deg) scale(1.2) !important;
-        opacity: 0.2;
+        height: 300% !important;
+        min-width: 300% !important;
+        bottom: -10% !important;
+        left: -100% !important;
+        transform: rotate(-90deg) scale(1.5) !important;
+        opacity: 0.3;
     }
     
-    /* === HEADER (bleibt wie gehabt) === */
+    /* === HEADER - EXAKT WIE ORIGINAL === */
     .header .container {
         display: flex;
         flex-direction: column;
@@ -94,31 +85,60 @@
         padding-bottom: 5px !important;
     }
 
+    /* Header Right Bereich */
     .header-right {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
         margin: 10px auto;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .header-right .language-selector select,
     .header-right .resume-btn {
-        height: 40px !important;
-        min-height: 40px !important;
-        line-height: 38px !important;
+        height: 44px !important;
+        min-height: 44px !important;
+        max-height: 44px !important;
+        line-height: 40px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin: 0 !important;
         font-size: 0.9rem;
+        box-sizing: border-box !important;
     }
     
+    .header-right .language-selector select {
+        -webkit-appearance: none;
+        appearance: none;
+        padding-right: 30px;
+    }
+    
+    .header-right .resume-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    /* Header gesamte Höhe reduzieren */
     header {
         padding: 0.2rem 0 !important;
+        min-height: 50px !important;
     }
     
+    /* Logo kleiner und weniger Abstand */
     .logo {
         font-size: 1.2rem !important;
         margin: 2px 0 !important;
+        line-height: 1.2 !important;
     }
     
+    /* Navigation kompakter */
     nav ul {
         margin: 2px 0 !important;
         gap: 5px !important;
@@ -130,16 +150,40 @@
     
     nav ul li a {
         font-size: 0.8rem !important;
+        padding: 2px 0 !important;
+    }
+    
+    /* Header Container */
+    .header .container {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        gap: 2px !important;
+    }
+    
+    /* Header Right Bereich - kompakter */
+    .header-right {
+        margin: 2px auto !important;
+        gap: 5px !important;
+    }
+    
+    /* Sprachselector und Button etwas kleiner */
+    .header-right .language-selector select,
+    .header-right .resume-btn {
+        height: 36px !important;
+        min-height: 36px !important;
+        max-height: 36px !important;
+        line-height: 32px !important;
+        font-size: 0.8rem !important;
     }
     
     /* === ALLGEMEINE LAYOUTS === */
     section {
-        padding: 40px 0;
+        padding: 60px 0;
+        scroll-margin-top: 100px;
     }
     
     .about-content {
         grid-template-columns: 1fr;
-        gap: 30px;
     }
     
     .skills-grid {
@@ -165,16 +209,26 @@
     .timeline-item::after {
         left: 10px;
     }
+    
+    .timeline-date {
+        position: relative;
+        top: auto;
+        width: auto;
+        text-align: left;
+        margin-bottom: 10px;
+        right: auto !important;
+        left: auto !important;
+    }
 }
 
 /* Kleine Smartphones (bis 480px) */
 @media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .hero-content h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     
     .profile-image {
@@ -188,7 +242,6 @@
     }
     
     .hero-buttons .btn {
-        width: 200px;
         min-width: 200px;
     }
     
@@ -198,11 +251,5 @@
     
     nav ul li a {
         font-size: 0.7rem !important;
-    }
-    
-    .header-right .language-selector select,
-    .header-right .resume-btn {
-        height: 35px !important;
-        font-size: 0.75rem !important;
     }
 }
