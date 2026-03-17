@@ -3,10 +3,7 @@
 /* Smartphone (bis 768px) */
 @media (max-width: 768px) {
     /* === ALLGEMEINE LAYOUTS === */
-    section {
-        padding: 60px 0;
-        scroll-margin-top: 70px;  /* Für alle Sektionen */
-    }
+
 
 
     /* Hero Section */
