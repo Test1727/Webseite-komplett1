@@ -196,11 +196,15 @@ nav ul li a {
     .timeline-item:nth-child(even) {
         left: 0;
     }
+
+    /* Für ALLE Punkte - ungerade und gerade */
+.timeline-item::after,
+.timeline-item:nth-child(even)::after {
+    transform: translateX(-50%);
+    left: 20px !important;
+}
     
-    .timeline-item::after {       
-        transform: translateX(-50%);  /* Zentriert den Punkt genau */
-        left: 20px;
-    }
+ 
     
     .timeline-date {
         position: relative;
