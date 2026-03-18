@@ -868,6 +868,15 @@ section {
 
 
 /* Nachrichten-Box */
+.futuristic-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    /* Kein position: absolute; */
+}
 
 .textarea-badge {
     position: absolute;
