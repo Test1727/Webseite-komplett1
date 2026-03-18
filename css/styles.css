@@ -866,6 +866,12 @@ section {
     z-index: 1;
 }
 
+/* Entfernt den orangenen Standard-Fokus-Rahmen */
+:focus {
+    outline: none;
+}
+
+
 
 /* Für label[for="contact-message"] - WIRD VERWENDET */
 label[for="contact-message"] {
